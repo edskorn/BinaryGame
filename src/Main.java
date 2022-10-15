@@ -40,7 +40,9 @@ public class Main {
         //Sort array to find the maximum value - the last value will be the biggest
         Arrays.sort(arrDecNumbers);
 
-        System.out.println("The biggest: " + arrDecNumbers[arrDecNumbers.length-1]);
+        System.out.println("THE BIGGEST: " + arrDecNumbers[arrDecNumbers.length-1]);
+        long usedBytes = (Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory())/1048576;
+        System.out.println("Used memory: " + usedBytes + "Mb");
     }
 
     public static String toBinary(int number){
